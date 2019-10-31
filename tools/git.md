@@ -24,3 +24,5 @@ git
 
    origin是远程仓库的名字，关联远程库后就可以在本地管理git仓库了，这里的仓库是learngit。
 
+<img src="http://kmknkk.oss-cn-beijing.aliyuncs.com/image/git.jpg" alt="">
+
