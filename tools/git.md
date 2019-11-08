@@ -44,6 +44,16 @@ git
    git remote add upstream https://github.com/pingcap/tidb
    ```
 
+   拓展
+
+   ```
+   git remote -v          # 查看远程仓库配置
+   git fetch upstream   # 将远程仓库的所有更新取回本地
+   git log upstream/master    # 查看远程仓库master分支对应的commit记录
+   git merge upstream/master  # 将远程仓库master与本地分支合并
+   git log --pretty=oneline --graph 
+   ```
+
 4. 在本地仓库创建分支进行开发
 
    ```
