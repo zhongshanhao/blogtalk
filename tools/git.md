@@ -89,6 +89,32 @@ git
    git push origin my_branch:my_branch
    ```
 
+   命令拓展
+
+   * 变基出现冲突时
+
+     ```
+     git rebase master  #出现冲突
+     #解决冲突
+     git add .
+     git rebase --continue #继续变基
+     ```
+
+   * git push出现冲突时
+
+     ```
+     git fetch origin   #拉取远程分支
+     git merge origin/my_branch   #合并对应分支，合并冲突在另外解决
+     
+     #若有冲突,定位文件,修改文件,提交修改
+     git status  
+     git add .
+     git commit -m "fix conflict"
+     
+     #最后push
+     git push origin my_branch:my_branch
+     ```
+
 7. 在github上选择my_branch分支，点击new pull request创建新的PR
 
 
