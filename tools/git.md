@@ -70,16 +70,27 @@ git
 
    命令拓展
 
-   ```
-   git log upstream/master    # 查看upstream/master分支最新的commit
-   
-   # 当当前工作没有提交到本地仓库时，可以将工作现场存储起来
-   git stash
-   git stash list 				# 查看暂存区列表
-   git stash pop			 # 恢复工作现场，删除暂存区内容
-   git stash apply stash@{0}   # 恢复指定暂存区，且不删除该暂存区内容
-   git stash drop 			 # 删除暂存区内容
-   ```
+   * 暂存工作现场
+
+     ```
+     git log upstream/master    # 查看upstream/master分支最新的commit
+     
+     # 当当前工作没有提交到本地仓库时，可以将工作现场存储起来
+     git stash
+     git stash list 				# 查看暂存区列表
+     git stash pop			 # 恢复工作现场，删除暂存区内容
+     git stash apply stash@{0}   # 恢复指定暂存区，且不删除该暂存区内容
+     git stash drop 			 # 删除暂存区内容
+     ```
+
+   * merge出现冲突
+
+     ```
+     git status  #定位冲突文件
+     #修改文件解决冲突
+     git add .
+     git commit -m "solve conflict"
+     ```
 
 6. 将my_branch分支变基，即将该分支的分叉出改为最新的master头结点处
 
