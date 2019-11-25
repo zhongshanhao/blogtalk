@@ -54,19 +54,37 @@ git
    git log --pretty=oneline --graph 
    ```
 
-4. 在本地仓库创建分支进行开发
+4. 在开发之前先同步远程仓库
+
+   ```
+   git fetch upstream
+   git merge upstream/master
+   
+   #  或者
+   git pull upstream master
+   ```
+
+5. 然后在本地仓库创建分支进行开发
 
    ```
    git checkout -b my_branch
    ```
 
-5. 完成代码开发后，将本地master分支更新到，与upstream/master分支同步
+6. 完成代码开发后，将分支推送到远程仓库
 
    ```
-   git fetch upstream
-   git checkout master
-   git merge upstream/master
+   git push origin my_branch:my_branch
    ```
+
+7. 在github上选择my_branch分支，点击new pull request创建新的PR
+
+8. 等待pr完成，可以删除该分支
+
+   ```
+   git branch -d my_branch
+   ```
+
+   
 
    命令拓展
 
@@ -92,15 +110,15 @@ git
      git commit -m "solve conflict"
      ```
 
-6. 将my_branch分支变基，即将该分支的分叉出改为最新的master头结点处
+   rebase
+
+   变基操作，将my_branch分支变基，即将该分支的分叉出改为最新的master头结点处
 
    ```
    git checkout my_branch
    git rebase master
    git push origin my_branch:my_branch
    ```
-
-   命令拓展
 
    * 变基出现冲突时
 
@@ -125,8 +143,6 @@ git
      #最后push
      git push origin my_branch:my_branch
      ```
-
-7. 在github上选择my_branch分支，点击new pull request创建新的PR
 
 
 
