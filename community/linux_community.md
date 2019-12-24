@@ -15,7 +15,7 @@ Linus Torvalds没有保留 Linux 源代码的版权，公开了代码，并邀�
 
 Linux的logo
 
-[![linux-Logo.gif](https://i.postimg.cc/Y9gzFsnn/linux-Logo.gif)](https://postimg.cc/BLSF9MGH)
+<img src="https://github.com/zhongshanhao/blogtalk/blob/master/image/linux-Logo.gif">
 
 为什么Linux的logo是一只企鹅呢？很多人都相信下面的说法：企鹅是南极洲的标志性动物，根据国际公约，南极洲为全人类共同所有，不属于世界上的任何国家，可国家都无权将南极洲纳入其版图。Linux 选择企鹅图案作为 Logo，其含义是：开放源代码的 Linux 为全人类共同所有，可公司无权将其私有。
 
@@ -59,7 +59,7 @@ Linux操作系统的诞生、发展和成长过程始终依赖着五个重要支
 
 Linux开源中国
 
-<img src="https://i.postimg.cc/fbs9FRBK/linux.png">
+<img src="https://github.com/zhongshanhao/blogtalk/blob/master/image/linux_opensource_community.png">
 
 Linux开源中国致力于开源技术推广研究、自由开源软件理念传播的公益开源社区。谈到Linux开源中国，就不得不提到一个人，那就是老王，老王是linux开源中国的积极倡导者。
 
